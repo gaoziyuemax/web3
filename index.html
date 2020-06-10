@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>道聚城</title>
+	<style type="text/css">
+	* {
+			padding: 0;
+			margin: 0;
+		}
+		.father1 {
+			background: #f9f9f9;
+    		height: 30px;
+   			line-height: 30px;
+    		color: #666;
+    		margin: 0 auto;
+		}
+		.son1 {
+			float: left;
+			height: 30px;
+			overflow: hidden;
+			margin: 0 auto;
+			padding-left: 160px;
+		}
+		.a1 {
+			font-size: 0.8em;
+			color: #666;
+			text-decoration: none;
+		}
+		.a1:hover {
+			text-decoration: underline;
+		}
+		.son2 {
+			float: right;
+			padding-right: 160px;
+		}
+		.p1 {
+			font-size: 0.8em;
+			color: #666;
+		}
+		.s1 {
+			font-size: 0.8em;
+			color: #666;
+		}
+		.father2 {
+			height: 125px;
+			background-color: black;
+		}
+		.son3 {
+			width: 1300px;
+			height: 125px;
+			margin: auto;
+		}
+		.im1 {
+			float: left;
+			margin: 10px 0 0 0;
+		}
+		.grson1 {
+			float: left;
+			width: 550px;
+			height: 55px;
+			margin: 35px 60px 0 100px ;
+		}
+		.in1 {
+   			margin: 1px 0 0 6px;
+    		width: 450px;
+    		padding: 14px 10px 15px 10px;
+    		height: 18px;
+    		line-height: 18px;
+    		border: 0;
+    		color: #9f9f9f;
+    		font-size: 14px;
+    		background: #666;
+		}
+		.in2 {
+			background-color: #999;
+    		width: 50px;
+    		height: 47px;
+    		border: 1.5px solid rgb(5,158,252);
+		}
+		.im2 {
+			float: right;
+		}
+		.father3 {
+			background-color: #2e2e2e;
+			margin: 0 auto;
+    		height: 76px;
+		}
+		.son4 {
+			margin: 0 auto;
+    		width: 1190px;
+    		height: 76px;
+		}
+		ul {
+			list-style: none;
+		}
+		.nav1{
+			float: left;
+			display: flex;
+			flex: row;
+			flex-wrap: wrap;
+			width: 940px;
+		}
+		.a2 {
+			text-decoration: none;
+			color: #9f9f9f;
+			font-size: 18px;
+		}
+		.a2:hover {
+			color: orange;
+		}
+		.l1 {
+			width: 134px;
+			height: 52px;
+			text-align: center;
+			padding-top: 25px;
+		}
+		.grson2 {
+			float: right;
+			padding-top: 25px;
+			padding-left: 60px;
+		}
+		.a3 {
+			text-decoration: none;
+			font-size: 18px;
+			color: rgb(242, 96, 9);
+		}
+		.father4 {
+			height: 54px;
+			margin: 0 auto;
+		}
+		.son5 {
+			width: 1200px;
+			height: 54px;
+			margin: 0 auto;
+			background-color: #e6e6e8;
+			text-align: center;
+		}
+		.nav2{
+			position: relative;
+			left: 60px;
+			height: 55px;
+			float: left;
+			display: flex;
+			flex: row;
+			flex-wrap: wrap;
+		}
+		.l2 {
+			width: 118px;
+			height: 35px;
+			padding-top: 15px;
+		}
+		.l2:hover {
+			border-bottom: 2px solid #36ab87;
+		}
+		.a4 {
+			text-decoration: none;
+			color: black;
+		}
+		.a4:hover {
+			color: #36ab87;
+		}
+		.father5 {
+			height: 30px;
+		}
+		.father6 {
+			width: 1200px;
+			margin: 0 auto;
+		}
+		.son6 {
+			width: 228px;
+			float: left;
+		}
+		.grson3 {
+			background-color: #fafbfc;
+		}
+		h3 {
+    		margin-left: 18px;
+    		font-size: 16px;
+    		color: #555;
+    		font-weight: bold;
+    		height: 47px;
+    		border-bottom: 2px solid #f3f4f6;
+    		line-height: 54px;
+    		text-indent: 6px;
+    		text-overflow: ellipsis;
+    		position: relative;
+		}
+		.nav3 {
+			margin-left: 20px;
+		}
+		.l3 {
+			width: 195px;
+			height: 75px;
+			padding-top: 15px;
+			border-bottom: 1px dashed #e7e7e7;
+		}
+		.a5 {
+			width: 100%;
+			text-decoration: none;
+			color: black;
+			font-size: 0.9em;
+		}
+		.grrson1 {
+			float: right;
+		}
+		.p1 {
+			width: 108px;
+    		font-size: 12px;
+    		font-weight: bold;
+    		height: 14px;
+    		line-height: 12px;
+    		white-space: nowrap;
+    		overflow: hidden;
+		}
+		.p1:hover {
+			color: #36ab87;
+			text-decoration: underline;
+		}
+		.p2 {
+			margin-top: 8px;
+    		height: 15px;
+		}
+		.p3 {
+			font-size: 12px;
+			margin-top: 10px;
+		}
+		.p3:hover {
+			color: orange;
+		}
+		.son7 {
+			width: 952px;
+			float: right;
+		}
+		.grson4 {
+    		width: 952px;
+    		height: 106px;
+    		background: #ededed;
+		}
+		.grrson2 {
+			float: left;
+			padding: 18px 15px 0 15px;
+			width: 922px;
+		}
+		label {
+			font-size: 0.8em;
+		}
+		.in3 {
+			height: 24px;
+    		border: 1px solid #ccc;
+    		width: 338px;
+    		padding: 0 2px;
+		}
+		.la1 {
+			margin-left: 20px;
+		}
+		.in4 {
+			height: 24px;
+    		border: 1px solid #ccc;
+    		width: 34px;
+    		margin: 0 3px;
+    		padding: 0 2px;
+		}
+		.a6 {
+			background: #f5f5f5;
+    		width: 44px;
+    		height: 24px;
+    		line-height: 24px;
+    		display: inline-block;
+    		overflow: hidden;
+    		border: 1px solid #ccc;
+    		color: #222;
+    		font-size: 12px;
+    		text-align: center;
+    		text-decoration: none;
+    		position: relative;
+    		top: 9px;
+		}
+		.grrson3 {
+			float: left;
+			padding: 0 18px;
+    		height: 28px;
+    		line-height: 28px;
+    		margin-top: 20px;
+		}
+		.a7 {
+			text-decoration: none;
+			color: black;
+			font-size: 14px;
+			margin-right: 30px;
+		}
+		.a7:hover {
+			color: #ff5900;
+		}
+		.a8 {
+			text-decoration: none;
+			color: black;
+			font-size: 14px;
+			margin-right: 30px;
+		}
+		.grson5 {
+			width: 952px;
+			height: 848px;
+    		background-color:#fafbfc;
+    		margin-top: 10px;
+		}
+		.grrson4 {
+			padding-top: 17px;
+		}
+		.d1 {
+			margin: 0 16px 19px 16px;
+			text-align: center;
+    		float: left;
+    		width: 202px;
+    		height: 370px;
+    		background-color: #fff;
+    		position: relative;
+    		box-shadow:1px 1px 5px #999;
+		}
+		
+		.im4 {
+			margin: 23px auto 0;
+    		display: block;
+    		width: 116px;
+    		height: 212px;
+    		margin-bottom: 11px;
+		}
+		.a9 {
+			color: #2e2e2e;
+    		width: 200px;
+    		height: 24px;
+    		line-height: 20px;
+   			overflow: hidden;
+    		text-decoration: none;
+    		cursor: pointer;
+    		display: block;
+    		font-size: 14px;
+		}
+		.p4 {
+			font-size: 0.8em;
+			line-height: 17px;
+		}
+		.s2 {
+			color: #ff5900;
+    		font-size: 14px;
+		}
+		.a10 {
+			margin: 10px auto 0;
+			width: 124px;
+    		height: 32px;
+    		line-height: 32px;
+    		text-align: center;
+    		background: #36ab87;
+   			color: #fff;
+    		display: block;
+    		text-decoration: none;
+		}
+		.grrson5{
+			margin-top: 30px;
+    		padding-bottom: 30px;
+    		height: 38px;
+    		line-height: 36px;
+    		font-size: 14px;
+    		padding-top: 10px;
+    		color: #2e2e2e;
+    		width: auto;
+    		clear: both;
+    		display: block;
+    		overflow: hidden;
+    		text-align: center;
+		}
+		.a11 {
+			margin: 0 5px;
+   			display: inline-block;
+    		font-size: 14px;
+    		text-decoration: none;
+    		color: #2e2e2e;
+    		width: 56px;
+    		height: 36px;
+    		line-height: 36px;
+    		border: solid 1px #ddd;
+    		background: #fff;
+		}
+		.a12 {
+			width: 36px;
+    		line-height: 36px;
+    		text-align: center;
+    		margin: 0 5px;
+    		display: inline-block;
+    		font-size: 14px;
+    		border: solid 1px #ddd;
+    		background: #fff;
+    		color: #2e2e2e;
+    		text-decoration: none;
+		}
+		.in5 {
+			text-align: center;
+    		width: 34px;
+    		height: 34px;
+    		margin: 0 3px;
+    		border: 1px solid #b7b7b7;
+		}
+		.p3 {
+			text-align: center;
+		}
+		.a13 {
+			text-decoration: none;
+			margin: 0 5px;
+    		display: inline-block;
+    		font-size: 14px;
+    		width: 50px;
+    		height: 36px;
+    		line-height: 36px;
+    		background: #f3f3f3;
+    		border: 1px solid #ccc;
+    		color: #606060;
+    		text-align: center;
+		}
+		.father7 {
+			margin: 0 auto;
+    		width: 1200px;
+		}
+		.im5 {
+			padding: 10px 7px 0px 7px;
+		}
+		.son8 {
+			text-align: center;
+			position: relative;
+			bottom: 45px;
+			left: 7px;
+			color: #fff;
+			width: 1180px;
+			height: 40px;
+			background-color: #000;
+			opacity:0.8;
+			z-index: 10;
+		}
+		.s4 {
+			font-size: 1.4em;
+			color: red;
+		}
+		.father8 {
+			background-color: #3b3f4a;
+    		margin: 0 auto;
+		}
+		.son9 {
+			padding: 40px 40px 40px 200px;
+			width: 1200px;
+			display: block;
+		}
+		h4 {
+			font-size: 1.2em;
+			color: #acb1bb;
+			padding-bottom: 20px;
+		}
+		.nav4 {
+			color: #acb1bb;
+			font-size: 14px;
+		}
+        .grson6 {
+        	width: 226px;
+    		float: left;
+    		height: 150px;
+        }
+        .grson7 {
+        	width: 226px;
+    		float: left;
+    		height: 150px;
+        }
+        .grson8 {
+        	width: 226px;
+    		float: left;
+    		height: 150px;
+        }
+        .father9 {
+        	margin: 0 auto;
+        	text-align: center;
+        }
+        .p6 {
+        	color: rgb(5,158,252);
+        }
+	</style>
+</head>
+<body>
+	<div class="father1">
+		<div class="son1">
+			<a href="#" class="a1">手机版</a>
+			<i>\</i>
+			<a href="#" class="a1">Q币充值</a>
+		</div>
+		<div class="son2">
+			<span class="s1"> 您还未登录，请先</span><a href="#">登录 </a>
+			<i>\</i>
+			<a href="#" class="a1"> 我的订单 </a>
+			<i>\</i>
+			<a href="#" class="a1"> 个人中心 </a>
+			<i>\</i>
+			<a href="#" class="a1"> 帮助中心 </a>
+			<i>\</i>
+			<a href="#" class="a1"> 游戏菜单 </a>
+		</div>
+	</div>
+	<div class="father2">
+		<div class="son3">
+			<img class="im1" src="img3/腾讯图标.jpg" width="220px" height="105px" alt="腾讯游戏">
+			<div class="grson1">
+				<input class="in1" type="text" name="search" value="请输入道具进行搜索">
+				<input class="in2" type="submit" name="search" value="搜索">
+			</div>
+			<img class="im2" src="img3/英雄联盟.jpg" width="220px" height="125px" alt="英雄联盟">
+		</div>
+	</div>
+	<div class="father3">
+		<div class="son4">
+			<ul class="nav1">
+				<li class="l1"><a href="#" class="a2">首页</a></li>
+				<li class="l1"><a href="#" class="a2">商品列表</a></li>
+				<li class="l1"><a href="#" class="a2">活动专区</a></li>
+				<li class="l1"><a href="#" class="a2">限时折扣</a></li>
+				<li class="l1"><a href="#" class="a2">限时发售</a></li>
+				<li class="l1"><a href="#" class="a2">周边商场</a></li>
+				<li class="l1"><a href="#" class="a2">个人中心</a></li>
+			</ul>
+			<div class="grson2">
+				<a href="#" class="a3">购物车</a>
+			</div>
+		</div>
+	</div>
+	<div class="father4">
+		<div class="son5">
+			<ul class="nav2">
+				<li class="l2"><a href="#" class="a4">全部分类</a></li>
+				<li class="l2"><a href="#" class="a4">英雄</a></li>
+				<li class="l2"><a href="#" class="a4">皮肤</a></li>
+				<li class="l2"><a href="#" class="a4">表情</a></li>
+				<li class="l2"><a href="#" class="a4">海克斯科技</a></li>
+				<li class="l2"><a href="#" class="a4">云顶之弈</a></li>
+				<li class="l2"><a href="#" class="a4">道具</a></li>
+				<li class="l2"><a href="#" class="a4">守卫眼</a></li>
+				<li class="l2"><a href="#" class="a4">道具包</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="father5"></div>
+	<div class="father6">
+		<div class="son6">
+			<div class="grson3">
+				<h3>热卖排行</h3>
+				<ul class="nav3">
+					<li class="l3">
+						<a href="#" class="a5">
+							<img src="img3/1-1.jpg" width="76px" height="54px">
+							<div class="grrson1">
+								<p class="p1">猩红之月 烬</p>
+								<p class="p2">Q币价：79.00</p>
+								<p class="p3">微信价：76.63</p>
+							</div>
+						</a>
+					</li>
+					<li class="l3">
+						<a href="#" class="a5">
+							<img src="img3/1-2.jpg" width="76px" height="54px">
+							<div class="grrson1">
+								<p class="p1">屠龙勇士 赵信</p>
+								<p class="p2">Q币价：79.00</p>
+								<p class="p3">微信价：76.63</p>
+							</div>
+						</a>
+					</li>
+					<li class="l3">
+						<a href="#" class="a5">
+							<img src="img3/1-3.jpg" width="76px" height="54px">
+							<div class="grrson1">
+								<p class="p1">死亡绽放 卡兹克</p>
+								<p class="p2">Q币价：69.00</p>
+								<p class="p3">微信价：66.63</p>
+							</div>
+						</a>
+					</li>
+					<li class="l3">
+						<a href="#" class="a5">
+							<img src="img3/1-4.jpg" width="76px" height="54px">
+							<div class="grrson1">
+								<p class="p1">泳池派对 德莱文</p>
+								<p class="p2">Q币价：49.00</p>
+								<p class="p3">微信价：46.63</p>
+							</div>
+						</a>
+					</li>
+					<li class="l3">
+						<a href="#" class="a5">
+							<img src="img3/1-5.jpg" width="76px" height="54px">
+							<div class="grrson1">
+								<p class="p1">源计划：联合</p>
+								<p class="p2">Q币价：99.00</p>
+								<p class="p3">微信价：96.63</p>
+							</div>
+						</a>
+					</li>
+					<li class="l3">
+						<a href="#" class="a5">
+							<img src="img3/1-6.jpg" width="76px" height="54px">
+							<div class="grrson1">
+								<p class="p1">灌篮高手 德莱厄斯</p>
+								<p class="p2">Q币价：69.00</p>
+								<p class="p3">微信价：66.63</p>
+							</div>
+						</a>
+					</li>
+					<li class="l3">
+						<a href="#" class="a5">
+							<img src="img3/1-7.jpg" width="76px" height="54px">
+							<div class="grrson1">
+								<p class="p1">驯龙女巫 婕拉</p>
+								<p class="p2">Q币价：79.00</p>
+								<p class="p3">微信价：76.63</p>
+							</div>
+						</a>
+					</li>
+					<li class="l3">
+						<a href="#" class="a5">
+							<img src="img3/1-8.jpg" width="76px" height="54px">
+							<div class="grrson1">
+								<p class="p1">源计划：雷</p>
+								<p class="p2">Q币价：79.00</p>
+								<p class="p3">微信价：76.63</p>
+							</div>
+						</a>
+					</li>
+					<li class="l3">
+						<a href="#" class="a5">
+							<img src="img3/1-9.jpg" width="76px" height="54px">
+							<div class="grrson1">
+								<p class="p1">猩红之月 亚索</p>
+								<p class="p2">Q币价：79.00</p>
+								<p class="p3">微信价：76.63</p>
+							</div>
+						</a>
+					</li>
+					<li class="l3">
+						<a href="#" class="a5">
+							<img src="img3/1-10.jpg" width="76px" height="54px">
+							<div class="grrson1">
+								<p class="p1">泳池派对 露露</p>
+								<p class="p2">Q币价：49.00</p>
+								<p class="p3">微信价：46.63</p>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="son7">
+			<div class="grson4">
+				<div class="grrson2">
+					<label>关键字：</label>
+					<input class="in3" type="text" name="search">
+					<label class="la1">价格区间(QB):</label>
+					<input class="in4" type="text" name="search">-<input class="in4" type="text" name="search">
+					<a class="a6" href="#" title="确定">确定</a>
+				</div>
+				<div class="grrson3">
+					<a class="a7" href="#"> 上架时间 </a>
+					<a class="a7" href="#"> 销量 </a>
+					<a class="a7" href="#"> 价格 </a>
+					<input type="radio" name="choose"><a class="a8">显示拥有</a>
+					<input type="radio" name="choose"><a class="a8">显示未拥有</a>
+				</div>
+			</div>
+			<div class="grson5">
+				<div class="grrson4">
+					<div class="d1">
+						<img class="im4" src="img3/-1-CHEST_375-9.jpg">
+						<a class="a9" href="#">法球大礼包</a>
+						<p class="p4">Q币价：<span class="s2">200.00</span></p>
+						<p class="p4">微信价：<span class="s2">195.00</span></p>
+						<a class="a10" href="#" title="立即购买">立即购买</a>
+					</div>
+					<div class="d1">
+						<img class="im4" src="img3/2-114041-.jpg">
+						<a class="a9" href="#">未来战士 艾瑞利亚</a>
+						<p class="p4">Q币价：<span class="s2">100.00</span></p>
+						<p class="p4">微信价：<span class="s2">95.00</span></p>
+						<a class="a10" href="#" title="立即购买">立即购买</a>
+					</div>
+					<div class="d1">
+						<img class="im4" src="img3/2-143005-.jpg">
+						<a class="a9" href="#">魔女 婕拉</a>
+						<p class="p4">Q币价：<span class="s2">99.00</span></p>
+						<p class="p4">微信价：<span class="s2">95.00</span></p>
+						<a class="a10" href="#" title="立即购买">立即购买</a>
+					</div>
+					<div class="d1">
+						<img class="im4" src="img3/2-25026-.jpg">
+						<a class="a9" href="#">魔女 莫甘娜</a>
+						<p class="p4">Q币价：<span class="s2">99.00</span></p>
+						<p class="p4">微信价：<span class="s2">95.00</span></p>
+						<a class="a10" href="#" title="立即购买">立即购买</a>
+					</div>
+					<div class="d1">
+						<img class="im4" src="img3/2-54025-9.jpg">
+						<a class="a9" href="#">FPX冠军礼包</a>
+						<p class="p4">Q币价：<span class="s2">500.00</span></p>
+						<p class="p4">微信价：<span class="s2">485.00</span></p>
+						<a class="a10" href="#" title="立即购买">立即购买</a>
+					</div>
+					<div class="d1">
+						<img class="im4" src="img3/2-7020-.jpg">
+						<a class="a9" href="#">魔女 乐芙兰</a>
+						<p class="p4">Q币价：<span class="s2">199.00</span></p>
+						<p class="p4">微信价：<span class="s2">195.00</span></p>
+						<a class="a10" href="#" title="立即购买">立即购买</a>
+					</div>
+					<div class="d1">
+						<img class="im4" src="img3/2-78016-.jpg">
+						<a class="a9" href="#">宇航员大礼包</a>
+						<p class="p4">Q币价：<span class="s2">400.00</span></p>
+						<p class="p4">微信价：<span class="s2">395.00</span></p>
+						<a class="a10" href="#" title="立即购买">立即购买</a>
+					</div>
+					<div class="d1">
+						<img class="im4" src="img3/2-90009-undefined.jpg">
+						<a class="a9" href="#">创世神 马儿扎哈</a>
+						<p class="p4">Q币价：<span class="s2">129.00</span></p>
+						<p class="p4">微信价：<span class="s2">125.00</span></p>
+						<a class="a10" href="#" title="立即购买">立即购买</a>
+					</div>
+					<div class="grrson5">
+						<a class="a11" href="#">上一页</a>
+						<a class="a12" href="#">1</a>
+						<a class="a12" href="#">2</a>
+						<a class="a12" href="#">3</a>
+						<a class="a12" href="#">4</a>
+						<a class="a12" href="#">5</a>
+						<a class="a11" href="#">下一页</a>
+						<span class="s3">共100页 到<input class="in5" type="text" name="now">页</span>
+						<a class="a13" href="#" title="确定">确定</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="father7">
+		<img class="im5" src="img3/手办.jpg">
+		<div class="son8">
+			<p class="p5">
+				为庆祝滔博勇夺季中杯冠军，超萌手办限时折扣，单独手办享<span class="s4">9</span>折优惠，整套购买享受<span class="s4">7</span>折优惠，还有更多活动请到官网查看。
+			</p>
+		</div>
+	</div>
+	<div class="father8">
+		<div class="son9">
+			<div class="grson6">
+				<h4>我是新手</h4>
+				<ul class="nav4">
+					<li>如何获得Q币</li>
+					<li>如何购买</li>
+					<li>如何赠送</li>
+					<li>关于购物车</li>
+				</ul>
+			</div>
+			<div class="grson7">
+				<h4>个人中心</h4>
+				<ul class="nav4">
+					<li>发货时间</li>
+					<li>如何领取</li>
+					<li>补发规则</li>
+					<li>VIP价定义</li>
+				</ul>
+			</div>
+			<div class="grson8">
+				<h4>支付方式</h4>
+				<ul class="nav4">
+					<li>支付方式</li>
+					<li>购物车</li>
+					<li>购物点支付</li>
+					<li>如何充值</li>
+				</ul>
+			</div>
+			<img src="img3/英雄联盟.jpg" width="220px" height="120px">
+		</div>
+		<div class="father9">
+				<p class="p6">COPYRIGHT © 1998 – 2020 TENCENT. ALL RIGHTS RESERVED.</p>
+				<p class="p6">腾讯公司 版权所有</p>
+			</div>
+	</div>
+</body>
+</html>
